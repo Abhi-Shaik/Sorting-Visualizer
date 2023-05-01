@@ -1,0 +1,30 @@
+.array-bar{
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.container{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: absolute;
+    bottom: 2vh;
+    right: 5vw;
+    left: 5vw;
+    height: 88vh;
+    background-color: aqua;
+}
+#genbt{
+    font-size: 1em;
+    border-radius: 2em;
+    margin: 1vw;
+}
+#sbtn{
+    font-size: 1em;
+    border-radius: 2em;
+    margin: 1vw;
+}
+.sltsort{
+    font-size: 1em;
+    border-radius: 2em;
+    margin: 1vw;
+}
