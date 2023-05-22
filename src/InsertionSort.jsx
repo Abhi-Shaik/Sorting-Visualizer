@@ -2,7 +2,6 @@ import waitforme from "./waitforme";
 
 const InsertionSort = async(delay,setsorted,arr,setarray) => {
     for(let i=1;i<arr.length;i++){
-        // let ele=arr[i];
         let id1=document.getElementById(i);
         id1.style.backgroundColor='purple';
         await waitforme(2*delay);
@@ -26,7 +25,6 @@ const InsertionSort = async(delay,setsorted,arr,setarray) => {
             j--;
         }
         id1.style.backgroundColor='red';
-        // arr[j+1]=ele;
     }
     console.log(arr)
     for(let i=0;i<arr.length;i++){

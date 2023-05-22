@@ -48,7 +48,6 @@ async function merge(arr,l,m,r,setarray,delay){
         id1.style.backgroundColor="red";
         await waitforme(delay);
     }
-    // setarray([...arr]);
 }
 
 async function mergefun(arr,l,r,setarray,delay){
