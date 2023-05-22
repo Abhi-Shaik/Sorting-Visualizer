@@ -40,4 +40,5 @@ img{
     background-color: rgb(9, 22, 84);
     color: white;
     height: 10vh;
+    overflow: auto;
 }

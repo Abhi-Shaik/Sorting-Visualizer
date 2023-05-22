@@ -65,7 +65,7 @@ const SortingVisualizer = () => {
     <div style={{backgroundColor:'#9fb4cc'}}>   
         <div className='navbar'>
             <img src={logo} alt="Sorting Visualizer" />
-            <span style={{fontSize: '2.5vw',display: 'flex',alignItems: 'center' }}>Visualizer</span>
+            <span style={{fontSize: '2.5em',display: 'flex',alignItems: 'center' }}>Visualizer</span>
             <div  style={{display:'flex',alignItems: 'center' ,justifyContent: 'center',backgroundColor:"#091654" ,color:'white',height: "10vh",marginRight:'1.5vw'}}>
             <button className='btn' onClick={()=>GenerateArray(size)} disabled={sorted===true?true:false}>Generate Array</button>
             <button className='btn' onClick={()=>sort(algo)} disabled={(sorted===true || sortdis===true)?true:false}>Sort</button>
