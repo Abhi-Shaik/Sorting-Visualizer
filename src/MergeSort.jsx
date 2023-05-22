@@ -61,7 +61,12 @@ async function mergefun(arr,l,r,setarray,delay){
 const MergeSort=async(arr,setarray,delay,setsorted)=>{
     let n=arr.length;
     await mergefun(arr,0,n-1,setarray,delay);
-    console.log(arr)
+    // console.log(arr)
+    for(let i=0;i<arr.length;i++){
+        const id1=document.getElementById(i);
+        id1.style.backgroundColor="#32a852";
+        await waitforme(delay);
+    }
     setsorted(false);
 }
 export default MergeSort;

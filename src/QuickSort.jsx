@@ -35,10 +35,15 @@ async function quick(arr,low,high,setarray,delay){
     }
 }
 
-const QuickSort = (arr,setarray,delay,setsorted) => {
+const QuickSort = async(arr,setarray,delay,setsorted) => {
     let n=arr.length;
-    quick(arr,0,n-1,setarray,5*delay);
+    await quick(arr,0,n-1,setarray,5*delay);
+    for(let i=0;i<arr.length;i++){
+        const id1=document.getElementById(i);
+        id1.style.backgroundColor="#32a852";
+        await waitforme(delay);
+    }
     setsorted(false);
 }
 
-export default QuickSort
+export default QuickSort;

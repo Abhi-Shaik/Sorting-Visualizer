@@ -69,8 +69,8 @@ const SortingVisualizer = () => {
             <div  style={{display:'flex',alignItems: 'center' ,justifyContent: 'center',backgroundColor:"#091654" ,color:'white',height: "10vh",marginRight:'1.5vw'}}>
             <button className='btn' onClick={()=>GenerateArray(size)} disabled={sorted===true?true:false}>Generate Array</button>
             <button className='btn' onClick={()=>sort(algo)} disabled={(sorted===true || sortdis===true)?true:false}>Sort</button>
-            <label style={{marginRight:'0.2vw'}}className='sltsort' htmlFor="sort-select" >Select a sorting algorithm:</label>
-                <select  className='sltsort' onChange={(e)=>sortHandler(e)} id="sort-select">
+            <label style={{marginRight:'0.2vw'}} className='sltsort' htmlFor="sort-select" disabled={sorted===true?true:false}>Select a sorting algorithm:</label>
+                <select  className='sltsort' onChange={(e)=>sortHandler(e) } disabled={sorted===true?true:false}id="sort-select">
                     <option value="BubbleSort">Bubble Sort</option>
                     <option value="InsertionSort">Insertion Sort</option>
                     <option value="MergeSort">Merge Sort</option>

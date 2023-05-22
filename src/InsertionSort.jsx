@@ -26,7 +26,7 @@ const InsertionSort = async(delay,setsorted,arr,setarray) => {
         }
         id1.style.backgroundColor='red';
     }
-    console.log(arr)
+    // console.log(arr)
     for(let i=0;i<arr.length;i++){
         const id1=document.getElementById(i);
         id1.style.backgroundColor="#32a852";
