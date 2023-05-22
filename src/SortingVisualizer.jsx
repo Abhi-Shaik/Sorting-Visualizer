@@ -72,7 +72,6 @@ const SortingVisualizer = () => {
             <label style={{marginRight:'0.2vw'}}className='sltsort' htmlFor="sort-select" >Select a sorting algorithm:</label>
                 <select  className='sltsort' onChange={(e)=>sortHandler(e)} id="sort-select">
                     <option value="BubbleSort">Bubble Sort</option>
-                    <option value="SelectionSort">Selection Sort</option>
                     <option value="InsertionSort">Insertion Sort</option>
                     <option value="MergeSort">Merge Sort</option>
                     <option value="QuickSort">Quick Sort</option>
